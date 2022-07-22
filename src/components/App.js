@@ -1,7 +1,11 @@
-// import user from 'path/to/user.json';
+import user from '../data/user.json';
 // import data from '/path/to/data.json';
 // import friends from 'path/to/friends.json';
 // import transactions from 'path/to/transactions.json';
+
+import Profile from './Profile/Profile';
+
+const {username, tag, location, avatar, stats} = user;
 
 export const App = () => {
   return (
@@ -17,6 +21,13 @@ export const App = () => {
       }}
     >
       React homework 1
+      <Profile
+            username={username}
+            tag={tag}
+            location={location}
+            avatar={avatar}
+            stats={stats}
+         />
     </div>
   );
 };
