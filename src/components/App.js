@@ -1,17 +1,18 @@
 import user from '../data/user.json';
-// import data from '/path/to/data.json';
+import data from '../data/data.json';
 // import friends from 'path/to/friends.json';
 // import transactions from 'path/to/transactions.json';
 
 import Profile from './Profile/Profile';
+import Statistics from './Statistics/Statistics';
 
-const {username, tag, location, avatar, stats} = user;
+const { username, tag, location, avatar, stats } = user;
 
-export const App = () => {
+const App = () => {
   return (
     <div
       style={{
-        paddingTop: '20px',
+        paddingTop: '40px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -20,14 +21,17 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      React homework 1
       <Profile
-            username={username}
-            tag={tag}
-            location={location}
-            avatar={avatar}
-            stats={stats}
-         />
+        username={username}
+        tag={tag}
+        location={location}
+        avatar={avatar}
+        stats={stats}
+      />
+      <Statistics title="Upload stats" stats={data} />
+      <Statistics stats={data} />
     </div>
   );
 };
+
+export default App;
