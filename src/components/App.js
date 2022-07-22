@@ -1,10 +1,11 @@
 import user from '../data/user.json';
 import data from '../data/data.json';
-// import friends from 'path/to/friends.json';
+import friends from '../data/friends.json';
 // import transactions from 'path/to/transactions.json';
 
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
+import FriendList from './FriendList/FriendList';
 
 const { username, tag, location, avatar, stats } = user;
 
@@ -30,6 +31,7 @@ const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
+      <FriendList friends={friends} />
     </div>
   );
 };
