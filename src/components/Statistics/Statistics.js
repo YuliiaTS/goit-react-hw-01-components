@@ -7,9 +7,9 @@ export default function Statistics({ title, stats }) {
       <ul className="stat-list">
         {stats.map(({ id, label, percentage }) => {
           return (
-            <li className="item" key={id}>
+            <li className="item" key={id} style={{ backgroundColor: getRandomHexColor() }}>
               <span className="label">{label}</span>
-              <span className="percentage">{percentage}</span>
+              <span className="percentage">{percentage}%</span>
             </li>
           );
         })}
@@ -18,9 +18,9 @@ export default function Statistics({ title, stats }) {
   );
 }
 
-// function getRandomHexColor() {
-//     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-//   }
+function getRandomHexColor() {
+    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  }
 
 Statistics.propTypes = {
   title: PropTypes.string,
