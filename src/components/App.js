@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div
       style={{
-        paddingTop: '40px',
+        paddingTop: '20px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',

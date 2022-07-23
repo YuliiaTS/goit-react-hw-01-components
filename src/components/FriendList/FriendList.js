@@ -18,7 +18,4 @@ export default function FriendList({friends}) {
 
 FriendList.propTypes = {
     id: PropTypes.number,
-    avatar: PropTypes.string,
-    name: PropTypes.string,
-    isOnline: PropTypes.bool,
 };
