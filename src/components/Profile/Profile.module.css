@@ -6,8 +6,8 @@
 	border: 1px solid gray;
 	border-radius: 5px;
 	font-size: 14px;
-	color: gray;
-	overflow: hidden;
+	color: grey;
+    background-color: #fff;
 	text-transform: none;
 	margin-bottom: 20px;
     position: relative;
@@ -19,6 +19,7 @@
 	align-items: center;
 }
 .avatar {
+    display: block;
     border: 1px solid gray;
 	border-radius: 50%;
 	width: 100px;
@@ -39,7 +40,6 @@
 	justify-content: center;
 	width: 100%;
 	height: 70px;
-	list-style: none;
     position: absolute;
     bottom: 0;
 }
